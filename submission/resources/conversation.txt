@@ -1,6 +1,0 @@
-Interview with Abraval Hotel Owner
-Abraval Hotel is a hotel and food business located in Machakos County. We prepare fresh meals and also sell fresh vegetables to customers.
-target audience - Our target audience includes local residents, travelers, workers, families, and customers looking for fresh food and vegetables.
-offered - The food menu, available vegetables, ordering options, contact information, and location of the hotel.
-colours - Red, yellow, and white. The website should look clean, welcoming, and professional.
-Visitors should be able to view available meals and vegetables, place food pre-orders before arriving at the hotel, request pickup or home delivery, and contact the hotel for more information.
