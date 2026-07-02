@@ -6,7 +6,7 @@
 > [!TIP]
 > **Using VS Code?** To preview this README file with full formatting inside VS Code, press `Ctrl + Shift + V` (Windows/Linux) or `Cmd + Shift + V` (Mac).
 
-Welcome to CAT 2! This assessment **continues directly from the Midterm**. You will take the HTML/CSS webpage you already built, carry it forward into a new repository, and bring it to life with **vanilla JavaScript** — no frameworks, no libraries, just your own logic.
+Welcome to CAT 2! This assessment from the Midterm**. You will take the HTML/CSS webpage you already built, carry it forward into a new repository, and bring it to life with **vanilla JavaScript** — no frameworks, no libraries, just your own logic.
 
 This assessment combines:
 - 💡 **JavaScript Fundamentals (DOM, Events, Loops, Persistence)**
