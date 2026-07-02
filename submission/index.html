@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABRAVAL FISH POINT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ABRAVAL HOTEL</h1>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#food">Food Menu</a>
+            <a href="#vegetables">Vegetables</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+    <section class="banner">
+        <img src="images/banner.jpeg" alt="Abraval Fish Point">
+
+        <div class="banner-text">
+            <h2>Fresh Meals & Farm Fresh Vegetables</h2>
+
+            <p>
+                Pre-order your meals before arriving or request home delivery
+                for both food and fresh vegetables.
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+    <h2>About Abraval Fish Point</h2>
+
+    <p>
+        Abraval Fish Point is located in Machakos County and is committed to serving freshly prepared meals and farm-fresh vegetables. What started as a fish only shop has grown to become a full hotel where different meals are sold. Customers can pre-order
+        food before arriving or request home delivery services.
+    </p>
+
+    <p>
+        We pride ourselves on good quality ingredients, excellent customer service, and ensuring every meal is prepared fresh for our customers.
+    </p>
+</section>
+<section id="food" class="food-menu">
+    <h2>Food Menu</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <h4>Pilau</h4>
+            <p>Freshly prepared spiced rice.</p>
+        </div>
+
+        <div class="food-card">
+            <h4>Chicken Stew</h4>
+            <p>Tender chicken cooked with rich spices.</p>
+        </div>
+
+        <div class="food-card">
+            <h4>Fish</h4>
+            <p>Deliciously fried fish.</p>
+        </div>
+
+        <div class="food-card">
+            <h4>Chapati</h4>
+            <p>Soft and freshly made chapati.</p>
+        </div>
+    </div>
+</section>
+<section id="vegetables" class="vegetables">
+    <h2>Fresh Vegetables</h2>
+
+    <div class="vegetable-grid">
+
+        <div class="vegetable-card">
+            <h4>Spinach</h4>
+            <p>Fresh farm-picked spinach.</p>
+        </div>
+
+        <div class="vegetable-card">
+            <h4>Sukuma Wiki</h4>
+            <p>Healthy and freshly harvested.</p>
+        </div>
+
+        <div class="vegetable-card">
+            <h4>Cabbage</h4>
+            <p>Crisp and fresh cabbage.</p>
+        </div>
+
+        <div class="vegetable-card">
+            <h4>Tomatoes</h4>
+            <p>Fresh tomatoes for your meals.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="order" class="order-section">
+
+    <h2>Place Your Order</h2>
+
+    <div class="wishlist-container-block">
+        <h3>Build Your Custom Combo</h3>
+        <p class="wishlist-subtitle">Can't find what you want below? Type a custom dish request here:</p>
+        
+        <input type="text" id="custom-item-input" placeholder="e.g., Ugali Fish Combo">
+        <button type="button" id="add-custom-btn" class="btn-add-request">Add Request</button>
+        
+        <ul id="custom-requests-list"></ul>
+    </div>
+
+    <form>
+
+        <div class="form-group">
+            <label id="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label id="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Food Items</label><br>
+            <input type="checkbox" name="food[]" value="Pilau">Pilau
+            <br>
+            <input type="checkbox" name="food[]" value="Chicken Stew">Chicken Stew
+            <br>
+            <input type="checkbox" name="food[]" value="Fish">Fish
+            <br>
+            <input type="checkbox" name="food[]" value="Chapati">Chapati
+        </div>
+
+        <div class="form-group">
+            <label>Vegetables</label><br>
+            <input type="checkbox" name="vegetables[]" value="Spinach">Spinach
+            <br>
+            <input type="checkbox" name="vegetables[]" value="Sukuma Wiki">Sukuma Wiki
+            <br>
+            <input type="checkbox" name="vegetables[]" value="Cabbage">Cabbage
+            <br>
+            <input type="checkbox" name="vegetables[]" value="Tomatoes">Tomatoes
+        </div>
+
+        <div class="form-group">
+            <label>Delivery Method</label>
+            <br>
+            <input type="radio" name="delivery" value="pickup">Pick Up
+            <br>
+            <input type="radio" name="delivery" value="home-delivery">Home Delivery
+        </div>
+
+        <div class="form-group">
+            <label id="time">Preferred Collection Time</label>
+            <input type="time" id="time">
+        </div>
+
+        <div class="form-group">
+            <label id="notes">Special Instructions</label>
+            <textarea id="notes"></textarea>
+        </div>
+
+        <button type="submit">Place Order</button>
+        <button type="clear">Clear</button>
+    </form>
+</section>
+<section id="contact" class="contact">
+
+    <h2>Contact Us</h2>
+    <p><b>Phone:</b> 0757060902</p>
+    <p><b>Location:</b> Machakos County</p>
+    <p><b>Email:</b> info@abravalhotel.com</p>
+    <p>We welcome orders for fresh meals and farm-fresh vegetables.</p>
+</section>
+</main>
+<footer>
+    <p> 2026 Abraval Fish Point. All Rights Reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>
