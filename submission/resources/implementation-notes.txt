@@ -1,0 +1,11 @@
+1. Loop-rendered dynamic content:
+   Food menu items are stored in a "foods" array of objects, each with a name, price, and description property. The array is looped over using forEach(), and for each item a card is created with createElement() and appendChild(), then inserted into the #foodContainer div.
+2. Dynamic add & remove elements:
+   The "Favourite Meals" section lets users type a meal name and click "Add Meal" to add it to a list. Each meal is created with createElement() and appendChild(), and each list item has its own "Remove" button using remove() to delete it from the page.
+3. Form handling with validation feedback:
+   The order form uses event.preventDefault() to stop the page from reloading on submit. It reads the Full Name and Phone Number fields using .value, and checks that both are filled in. 
+4. localStorage:
+   The favourite meals list is saved to localStorage every time a meal is added or removed, using JSON.stringify() to convert the array of meal names into a 
+   string. 
+Click-to-reveal on banner:
+   Clicking the banner image toggles a "reveal" class on the .banner-text div using classList.toggle()..
