@@ -110,3 +110,10 @@ orderForm.addEventListener("submit", function (event) {
     formFeedback.style.color = "green";
     orderForm.reset();
 });
+
+const bannerImage = document.getElementById("bannerImage");
+const bannerText = document.querySelector(".banner-text");
+
+bannerImage.addEventListener("click", function () {
+    bannerText.classList.toggle("reveal");
+});
