@@ -42,41 +42,55 @@ foods.forEach(function(food){
 const mealInput = document.getElementById("mealInput");
 const addMeal = document.getElementById("addMeal");
 const mealList = document.getElementById("mealList");
+function saveMeals() {
+    const meals = [];
+    const items = mealList.querySelectorAll("li");
+    items.forEach(function (item) {
+        // item.textContent includes "Remove" from the button, so we strip it
+        const mealName = item.textContent.replace("Remove", "").trim();
+        meals.push(mealName);
+    });
+    localStorage.setItem("favouriteMeals", JSON.stringify(meals));
+}
+
+function loadMeals() {
+    const savedMeals = localStorage.getItem("favouriteMeals");
+    if (savedMeals === null) {
+        return;
+    }
+    const meals = JSON.parse(savedMeals);
+    meals.forEach(function (mealName) {
+        addMealToList(mealName);
+    });
+}
+    // Clear the input
+    mealInput.value = "";
+function addMealToList(mealName) {
+    const li = document.createElement("li");
+    li.textContent = mealName + " ";
+
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+    removeButton.addEventListener("click", function () {
+        li.remove();
+        saveMeals();
+    });
+
+    li.appendChild(removeButton);
+    mealList.appendChild(li);
+}
 
 addMeal.addEventListener("click", function () {
-
     if (mealInput.value === "") {
         alert("Please enter a meal.");
         return;
     }
-
-    // Create a new list item
-    const li = document.createElement("li");
-
-    li.textContent = mealInput.value + " ";
-
-    // Create Remove button
-    const removeButton = document.createElement("button");
-
-    removeButton.textContent = "Remove";
-
-    // Remove the item when button is clicked
-    removeButton.addEventListener("click", function () {
-
-        li.remove();
-
-    });
-
-    // Add Remove button to list item
-    li.appendChild(removeButton);
-
-    // Add list item to the page
-    mealList.appendChild(li);
-
-    // Clear the input
+    addMealToList(mealInput.value);
+    saveMeals();
     mealInput.value = "";
-
 });
+
+loadMeals();
 const orderForm = document.querySelector("#order form");
 const formFeedback = document.getElementById("formFeedback");
 
