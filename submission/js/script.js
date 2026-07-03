@@ -77,3 +77,22 @@ addMeal.addEventListener("click", function () {
     mealInput.value = "";
 
 });
+const orderForm = document.querySelector("#order form");
+const formFeedback = document.getElementById("formFeedback");
+
+orderForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const nameValue = document.getElementById("name").value;
+    const phoneValue = document.getElementById("phone").value;
+
+    if (nameValue === "" || phoneValue === "") {
+        formFeedback.textContent = "Please fill in your name and phone number.";
+        formFeedback.style.color = "red";
+        return;
+    }
+
+    formFeedback.textContent = "Thank you, " + nameValue + "! Your order has been received.";
+    formFeedback.style.color = "green";
+    orderForm.reset();
+});
